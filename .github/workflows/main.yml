@@ -41,6 +41,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/Docker-Node-Image:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/Docker-Node-Image:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/Docker-Node-Image:buildcache,mode=max
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/docker-node-image:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/docker-node-image:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/docker-node-image:buildcache,mode=max
